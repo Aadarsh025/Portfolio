@@ -201,7 +201,7 @@ This portfolio represents my learning journey, technical interests, and continuo
 
 ## 🤝 Connect With Me
 
-* **GitHub:** [Aadarsh025](https://github.com/Aadarsh025)
+* **portfolio:** [link](portfolio-kappa-brown-70.vercel.app)
 * **LinkedIn:**[Aadarsh Tripathi](https://www.linkedin.com/in/aadarsh-tripathi-52a821302)
 * **Email:** [mail](mailto:aadarshtripathi557@gmail.com)
 
