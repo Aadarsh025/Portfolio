@@ -199,6 +199,23 @@ This portfolio represents my learning journey, technical interests, and continuo
 
 ---
 
+## Screenshots
+*Desktop-view
+
+ <img src="./screenshots/contact.png" alt=" Screenshot" width="800"/>
+
+ <img src="./screenshots/home.png" alt=" Screenshot" width="800"/>
+
+ <img src="./screenshots/project.png" alt=" Screenshot" width="800"/>
+
+ <img src="./screenshots/contactform-desktop.png" alt=" Screenshot" width="800"/>
+
+*Mobile-view
+
+ <img src="./screenshots/home mobile.png" alt=" Screenshot" width="800"/>
+
+ <img src="./screenshots/contactform.png" alt=" Screenshot" width="800"/>
+
 ## 🤝 Connect With Me
 
 * **portfolio:** [link](portfolio-kappa-brown-70.vercel.app)
