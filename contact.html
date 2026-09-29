@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me | Aadarsh Tripathi</title>
+
+    <!-- Fonts (same as the rest of the portfolio) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background effects -->
+    <div class="background-grid"></div>
+    <div class="glow glow-blue"></div>
+    <div class="glow glow-orange"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-bracket">&lt;</span>
+            AT
+            <span class="logo-bracket">/&gt;</span>
+            <span class="logo-dot">.</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+           <!-- Light / Dark mode -->
+            <button class="theme-toggle"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch to day mode"
+                    title="Day mode">
+                <i data-lucide="sun"></i>
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menuBtn"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN CONTACT SECTION ================= -->
+    <main class="contact-container">
+
+        <!-- Heading -->
+        <section class="contact-heading">
+            <div class="section-label">
+                <span class="status-dot"></span>
+                CONTACT INTERFACE
+            </div>
+
+            <h1>
+                Let's Build
+                <span class="gradient-text">Something Great.</span>
+            </h1>
+
+            <p>
+                Have an opportunity, a project idea, or just want to connect?
+                I'd love to hear from you. Let's turn your ideas into reality.
+            </p>
+        </section>
+
+
+        <!-- Contact content -->
+        <section class="contact-layout">
+
+            <!-- LEFT: Contact information -->
+            <aside class="contact-info">
+
+                <div class="info-heading">
+                    <span class="small-index">01 / CONNECT</span>
+                    <h2>Get in touch<span>.</span></h2>
+                    <p>
+                        I'm always interested in discussing new projects,
+                        creative ideas, and opportunities.
+                    </p>
+                </div>
+
+                <!-- Email card -->
+                <div class="info-card">
+                    <div class="info-icon blue-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+
+                    <div class="info-content">
+                        <span class="info-label">EMAIL ADDRESS</span>
+                        <a href="mailto:aadarshtripathi557@gmail.com"
+                           id="emailAddress"
+                           class="info-value">
+                            aadarshtripathi557@gmail.com
+                        </a>
+                    </div>
+
+                    <button
+                        class="copy-btn"
+                        id="copyEmail"
+                        type="button"
+                        aria-label="Copy email address"
+                        title="Copy email"
+                    >
+                        <i data-lucide="copy"></i>
+                    </button>
+                </div>
+
+                <!-- Location card -->
+                <div class="info-card">
+                    <div class="info-icon orange-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+
+                    <div class="info-content">
+                        <span class="info-label">LOCATION</span>
+                        <span class="info-value">India</span>
+                        <span class="info-description">
+                            Available for remote opportunities
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Availability card -->
+                <div class="availability-card">
+                    <div class="availability-top">
+                        <span class="availability-indicator"></span>
+                        <span>OPEN TO OPPORTUNITIES</span>
+                    </div>
+
+                    <p>
+                        Interested in internships, software development,
+                        data science, and collaborative projects.
+                    </p>
+                </div>
+
+                <!-- Social links -->
+                <div class="social-section">
+                    <span class="small-index">02 / SOCIAL NETWORK</span>
+                    <h3>Find me online</h3>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/Aadarsh025"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/aadarsh-tripathi-52a821302/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+
+                        <a href="https://codeforces.com/profile/Akira69"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="Codeforces">
+                            <i data-lucide="code-2"></i>
+                        </a>
+
+                        <a href="resume.html" class="social-link resume-shortcut"
+                           aria-label="View resume"
+                           title="View Resume">
+                            <i data-lucide="file-text"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </aside>
+
+
+            <!-- RIGHT: Contact form -->
+            <section class="contact-form-card">
+
+                <div class="form-header">
+                    <div>
+                        <span class="small-index">03 / SEND A MESSAGE</span>
+                        <h2>Let's talk<span>.</span></h2>
+                    </div>
+
+                    <div class="form-decoration">
+                        <i data-lucide="send"></i>
+                    </div>
+                </div>
+
+                <p class="form-intro">
+                    Fill out the form below and tell me what you have in mind.
+                </p>
+
+                <form id="contactForm" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name <span>*</span></label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="John Doe"
+                                autocomplete="name"
+                                required
+                            >
+                            <small class="field-error" id="nameError"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="john@example.com"
+                                autocomplete="email"
+                                required
+                            >
+                            <small class="field-error" id="emailError"></small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject <span>*</span></label>
+
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>
+                                Select a reason for contacting
+                            </option>
+                            <option value="Job Opportunity">Job Opportunity</option>
+                            <option value="Internship Opportunity">Internship Opportunity</option>
+                            <option value="Project Collaboration">Project Collaboration</option>
+                            <option value="Freelance Project">Freelance Project</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                        </select>
+
+                        <small class="field-error" id="subjectError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="message-label-row">
+                            <label for="message">Your Message <span>*</span></label>
+                            <span class="character-count" id="characterCount">
+                                0 / 1000
+                            </span>
+                        </div>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            maxlength="1000"
+                            placeholder="Tell me about your idea, project, or opportunity..."
+                            required
+                        ></textarea>
+
+                        <small class="field-error" id="messageError"></small>
+                    </div>
+
+                    <button type="submit" class="send-btn" id="sendBtn">
+                        <span id="sendBtnText">Send Message</span>
+                        <i data-lucide="arrow-up-right" id="sendBtnIcon"></i>
+                    </button>
+
+                    <p class="form-note">
+                        <i data-lucide="shield-check"></i>
+                        Your details will be used only to respond to your inquiry.
+                    </p>
+
+                    <div
+                        class="form-feedback"
+                        id="formFeedback"
+                        role="status"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+            </section>
+
+        </section>
+
+
+        <!-- Bottom call to action -->
+        <section class="bottom-cta">
+            <div class="cta-symbol">
+                <i data-lucide="message-circle"></i>
+            </div>
+
+            <div class="cta-text">
+                <h2>Have something in mind?</h2>
+                <p>Every great collaboration starts with a conversation.</p>
+            </div>
+
+            <a href="mailto:aadarshtripathi557@gmail.com" class="cta-button">
+                Email Me
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <a href="index.html" class="footer-logo">AT<span>.</span></a>
+
+        <p>
+            Designed &amp; built by
+            <span class="gradient-text">Aadarsh Tripathi</span>
+        </p>
+
+        <a href="#top" class="back-to-top"
+           onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+            Back to top ↑
+        </a>
+    </footer>
+
+
+    <script src="js/contact.js"></script>
+     
+</body>
+</html>

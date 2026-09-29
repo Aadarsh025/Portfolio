@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume | Aadarsh Tripathi</title>
+
+    <link rel="stylesheet" href="css/resume.css">
+
+
+    <!-- Fullscreen + print behaviour (kept here so it works regardless of resume.css) -->
+    <style>
+        /* Fullscreen preview */
+        #resumePreview:fullscreen,
+        #resumePreview.is-fullscreen {
+            overflow-y: auto;
+            padding: 24px;
+            background: var(--bg, #07131d);
+        }
+
+        /* Fallback for browsers without the Fullscreen API (e.g. iPhone Safari) */
+        #resumePreview.is-fullscreen {
+            position: fixed;
+            inset: 0;
+            z-index: 5000;
+            max-height: none;
+            height: 100%;
+            border-radius: 0;
+        }
+
+        #resumePreview:fullscreen .resume-page,
+        #resumePreview.is-fullscreen .resume-page {
+            max-width: 900px;
+            margin-inline: auto;
+        }
+
+        /* Print only the resume pages */
+        @media print {
+            @page { margin: 0; }
+
+            html,
+            body {
+                background: #fff !important;
+            }
+
+            body * {
+                visibility: hidden !important;
+            }
+
+            #resumePreview,
+            #resumePreview * {
+                visibility: visible !important;
+            }
+
+            #resumePreview {
+                position: absolute !important;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                max-height: none !important;
+                overflow: visible !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                border: 0 !important;
+                background: #fff !important;
+                box-shadow: none !important;
+            }
+
+            #resumePreview .resume-page {
+                margin: 0 !important;
+                padding: 0 !important;
+                border: 0 !important;
+                box-shadow: none !important;
+                background: #fff !important;
+                break-after: page;
+                page-break-after: always;
+                break-inside: avoid;
+            }
+
+            #resumePreview .resume-page:last-child {
+                break-after: auto;
+                page-break-after: auto;
+            }
+
+            #resumePreview .page-label {
+                display: none !important;
+            }
+
+            #resumePreview .resume-image {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+    <!-- Logo Structure -->
+    <a href="index.html" class="logo">
+        <span class="logo-bracket">&lt;</span> AT <span class="logo-bracket">/&gt;</span><span class="logo-dot">.</span>
+    </a>
+
+    <!-- Navigation Links -->
+    <div class="nav-links" id="navLinks">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Interactive Actions Tray -->
+    <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Switch to night mode" title="Day mode">
+            <i data-lucide="sun"></i>
+        </button>
+        <!-- Mobile Sandwich Button Menu -->
+        <button id="menuBtn" class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+            <i data-lucide="menu"></i>
+        </button>
+    </div>
+</nav>
+
+
+
+    <main>
+
+        <!-- Resume Heading -->
+        <section class="resume-hero">
+
+            <div class="section-label">
+                <span></span>
+                MY PROFILE
+            </div>
+
+            <h1>
+                My <span>Resume</span>
+            </h1>
+
+            <p>
+                Explore my education, technical skills, projects
+                and experience in one place.
+            </p>
+
+            <div class="hero-meta">
+                <span class="pdf-badge">PDF DOCUMENT</span>
+                <span>Updated September 2026</span>
+            </div>
+
+        </section>
+
+
+        <!-- Resume Layout -->
+        <section class="resume-layout">
+
+            <!-- Sidebar -->
+            <aside class="resume-sidebar">
+
+                <div class="profile-card">
+
+                    <div class="profile-avatar">AT</div>
+
+                    <h2>Aadarsh Tripathi</h2>
+
+                    <p class="profile-role">
+                        Computer Science Undergraduate
+                    </p>
+
+                    <div class="sidebar-divider"></div>
+
+                    <h3>RESUME CONTENTS</h3>
+
+                    <ul class="resume-contents">
+                        <li>
+                            <span>01</span>
+                            Education
+                        </li>
+                        <li>
+                            <span>02</span>
+                            Technical Skills
+                        </li>
+                        <li>
+                            <span>03</span>
+                            Projects
+                        </li>
+                        <li>
+                            <span>04</span>
+                            Experience
+                        </li>
+                        <li>
+                            <span>05</span>
+                            Certifications
+                        </li>
+                    </ul>
+
+                    <div class="sidebar-divider"></div>
+
+                    <div class="document-info">
+                        <div>
+                            <span class="info-label">FORMAT</span>
+                            <strong>PDF Document</strong>
+                        </div>
+
+                        <div>
+                            <span class="info-label">PAGES</span>
+                            <strong id="pageCount">2 Pages</strong>
+                        </div>
+                    </div>
+
+                    <a
+                        href="assets/Aadarsh_web_dev_resume.pdf"
+                        class="download-btn sidebar-download"
+                        download
+                    >
+                        <span>↓</span>
+                        Download Resume
+                    </a>
+
+                </div>
+
+            </aside>
+
+
+            <!-- Resume Preview -->
+            <section class="resume-main">
+
+                <div class="preview-toolbar">
+
+                    <div class="preview-heading">
+                        <span class="status-dot"></span>
+                        <div>
+                            <h2>Resume Preview</h2>
+                            <p>Scroll to explore all pages</p>
+                        </div>
+                    </div>
+
+                    <div class="preview-actions" >
+
+                        <button
+                            type="button"
+                            class="toolbar-btn"
+                            id="printBtn"
+                            title="Print resume"
+                        >
+                            ⎙ <span>Print</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- All pages are displayed vertically -->
+                <div class="resume-preview" id="resumePreview" >
+
+                    <div class="resume-page" id="page1">
+
+                        <div class="page-label">PAGE 01</div>
+
+                        <img
+                            src="assets/1.png"
+                            alt="Resume page 1"
+                            class="resume-image"
+                        >
+
+                    </div>
+
+
+                    <div class="resume-page" id="page2">
+
+                        <div class="page-label">PAGE 02</div>
+
+                        <img
+                            src="assets/2.png"
+                            alt="Resume page 2"
+                            class="resume-image"
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Bottom download -->
+                <div class="preview-footer">
+
+                    <p>
+                        End of resume
+                        <span>•</span>
+                        <span id="footerPageCount">3 pages</span>
+                    </p>
+
+                    <a
+                        href="assets/Aadarsh_web_dev_resume.pdf"
+                        class="download-btn"
+                        download
+                    >
+                        Download Complete PDF ↓
+                    </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+
+            <div>
+                <div class="section-label">
+                    <span></span>
+                    LET'S CONNECT
+                </div>
+
+                <h2>Interested in working together?</h2>
+
+                <p>
+                    I'm open to discussing projects, internships
+                    and opportunities to learn and contribute.
+                </p>
+            </div>
+
+            <a href="contact.html" class="contact-btn">
+                Contact Me →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>© 2026 Aadarsh Tripathi</span>
+        <span>Built with HTML · CSS · JavaScript</span>
+    </footer>
+
+
+    <script src="js/resume.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07131d">
+    <title> Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Ambient background -->
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+ <nav class="navbar">
+    <!-- Logo Structure -->
+    <a href="index.html" class="logo">
+        <span class="logo-bracket">&lt;</span> AT <span class="logo-bracket">/&gt;</span><span class="logo-dot">.</span>
+    </a>
+
+    <!-- Navigation Links -->
+    <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Interactive Actions Tray -->
+    <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Switch to night mode" title="Day mode">
+            <i data-lucide="sun"></i>
+        </button>
+        <!-- Mobile Sandwich Button Menu -->
+        <button id="menuBtn" class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+            <i data-lucide="menu"></i>
+        </button>
+    </div>
+</nav>
+
+
+    <main id="home">
+
+        <!--HERO-->
+        <section class="hero container">
+
+            <div class="hero-content glass-panel">
+
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    <span>Available for opportunities</span>
+                </div>
+
+                <p class="hero-kicker">Hello, I'm</p>
+
+                <h1>
+                    Aadarsh
+                    <span>Tripathi</span>
+                </h1>
+
+                <h2>Computer Science Undergraduate</h2>
+
+                <p class="hero-description">
+                    Building digital experiences that make a difference.
+                    I enjoy turning ideas into useful, clean and interactive
+                    products through code.
+                </p>
+
+                <div class="hero-meta">
+                    <span>Data Science</span>
+                    <span>Web Development</span>
+                    <span>Machine Learning</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">
+                        View Projects
+                        <span>→</span>
+                    </a>
+
+                    <a class="btn btn-secondary" href="assets/Aadarsh-Tripathi-Resume.pdf" download>
+                        Download Resume
+                        <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="social-links" aria-label="Social links">
+                    <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+                    <a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter">𝕏</a>
+                </div>
+
+                <div class="hero-coordinate" aria-hidden="true">
+                    <span>PORTFOLIO / 01</span>
+                    <span>23.25° N · 77.41° E</span>
+                </div>
+            </div>
+
+
+            <div class="hero-visual glass-panel">
+
+                <div class="visual-topline">
+                    <span>VISUAL STUDY</span>
+                    <span>01 / 04</span>
+                </div>
+
+                <div class="hero-image-wrap">
+                    <!-- Replace this URL with your own anime artwork later -->
+                    <img
+                        class="hero-image"
+                        src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=85"
+                        alt="Cinematic mountain landscape at sunset">
+
+                    <div class="image-vignette"></div>
+
+                    <div class="floating-ui floating-ui-top">
+                        <span class="mini-dot"></span>
+                        <span>FOCUS MODE</span>
+                    </div>
+
+                    <div class="floating-ui floating-ui-bottom">
+                        <span>BUILD</span>
+                        <strong>01</strong>
+                    </div>
+
+                    <div class="vertical-line"></div>
+                </div>
+
+                <div class="visual-caption">
+                    <div>
+                        <span class="caption-label">CURRENT DIRECTION</span>
+                        <strong>Better Code · Bigger Dreams</strong>
+                    </div>
+
+                    <span class="caption-arrow">↗</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURED PROJECTS
+        ========================== -->
+        <section class="projects-section container" id="projects">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-number">01 — WORK</span>
+                    <h2>Featured Projects</h2>
+                    <p>
+                        A selection of projects built while exploring
+                        web development, productivity and creative interfaces.
+                    </p>
+                </div>
+
+                <a class="view-all" href="project.html">
+                    View All Projects
+                    <span>↗</span>
+                </a>
+            </div>
+
+
+            <!-- Reusable carousel mount point -->
+            <div
+                class="carousel-shell"
+                id="projectCarousel"
+                data-carousel="projects">
+
+                <button
+                    class="carousel-arrow carousel-prev"
+                    type="button"
+                    aria-label="Previous project">
+                    ←
+                </button>
+
+                <div class="carousel-viewport">
+                    <div class="carousel-track"></div>
+                </div>
+
+                <button
+                    class="carousel-arrow carousel-next"
+                    type="button"
+                    aria-label="Next project">
+                    →
+                </button>
+
+                <div class="carousel-hint">
+                    <span>Drag / Swipe</span>
+                    <span class="hint-line"></span>
+                    <span>Use ← →</span>
+                </div>
+
+                <div
+                    class="carousel-dots"
+                    aria-label="Project pagination">
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MINI INFO STRIP
+        ========================== -->
+        <section class="info-strip container" id="about">
+
+            <article class="info-card glass-panel">
+                <span class="info-icon">01</span>
+                <div>
+                    <span class="info-label">FOCUS</span>
+                    <h3>Building useful products</h3>
+                    <p>Simple interfaces with meaningful interactions.</p>
+                </div>
+            </article>
+
+            <article class="info-card glass-panel">
+                <span class="info-icon">02</span>
+                <div>
+                    <span class="info-label">LEARNING</span>
+                    <h3>Data + Web + AI</h3>
+                    <p>Exploring practical applications of technology.</p>
+                </div>
+            </article>
+
+            <article class="info-card glass-panel">
+                <span class="info-icon">03</span>
+                <div>
+                    <span class="info-label">APPROACH</span>
+                    <h3>Learn → Build → Improve</h3>
+                    <p>Iterating through projects and real experience.</p>
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             QUOTE
+        ========================== -->
+        <section class="quote-section container">
+
+            <div class="quote-card glass-panel">
+
+                <div class="quote-mark">“</div>
+
+                <blockquote>
+                    Small steps every day<br>
+                    lead to big results.
+                </blockquote>
+
+                <div class="quote-author">
+                    <span></span>
+                    Aadarsh Tripathi
+                </div>
+
+                <div class="quote-art">
+                    <img
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"
+                        alt=""
+                        aria-hidden="true">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer container">
+
+        <div>
+            <a class="brand" href="#home">
+                <span class="brand-mark">A</span>
+                <span class="brand-name">Aadarsh</span>
+            </a>
+
+            <p>Designing, coding and learning one project at a time.</p>
+        </div>
+
+        <div class="footer-right">
+            <span>© <span id="currentYear"></span> Aadarsh Tripathi</span>
+            <a href="#home">Back to top ↑</a>
+        </div>
+
+    </footer>
+
+    
+    <script src="js/carousel.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
