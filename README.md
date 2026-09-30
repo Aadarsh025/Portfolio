@@ -218,7 +218,7 @@ This portfolio represents my learning journey, technical interests, and continuo
 
 ## 🤝 Connect With Me
 
-* **portfolio:** [link](portfolio-kappa-brown-70.vercel.app)
+* **portfolio:** [link](https://portfolio-kappa-brown-70.vercel.app/)
 * **LinkedIn:**[Aadarsh Tripathi](https://www.linkedin.com/in/aadarsh-tripathi-52a821302)
 * **Email:** [mail](mailto:aadarshtripathi557@gmail.com)
 
